@@ -1,0 +1,24 @@
+body{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+p,label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+/* #color {
+    background-color: aqua;
+} */

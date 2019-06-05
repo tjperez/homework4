@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Click the button to Add rows, columns and also delete them.</p>
+
+    <table id="myTable"  cellpadding="30">
+        <tr>
+            <td id="color" onclick=changeColor(this)></td>
+            <td id="color"></td>
+        </tr>
+        <tr>
+            <td id="color"></td>
+            <td id="color"></td>
+        </tr>
+        <tr>
+            <td id="color"></td>
+            <td id="color"></td>
+        </tr>
+    </table>
+    <br>
+
+    <input type="button" value="Create row" onclick="appendRow('myTable')" />
+
+    <input type="button" value="Delete row" onclick="deleteRow('myTable')" />
+
+    <input type="button" value="Create column" onclick="appendColumn('myTable')" />
+
+    <input type="button" value="Delete column" onclick="deleteColumn('myTable')" />
+
+    <!-- <input type="button" value="Fill All" onclick="colorAll('myTable')" /> -->
+
+    <input type="button" value="Clear All" onclick="clearAll('myTable')" />
+
+    <p>Choose a color:</p>
+
+    <div>
+        <label for="colorPicker">Color Picker:</label>
+        <input type="color" id="colorPicker" name="head" value="#e66465">
+    </div>
+    <div>
+        <button onclick="changeColor()">Change color</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
